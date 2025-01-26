@@ -1,0 +1,63 @@
+
+Fighter Identification
+1. red_fighter_name, blue_fighter_name: Names of the red and blue fighters.
+2. red_nickname, blue_nickname: Fighter nicknames 
+
+
+Match Metadata
+1. event_date: Date of the match.
+2. method: How the match ended (e.g., knockout, decision, submission).
+3. round: The round in which the fight ended.
+4. bout_type: Type of bout (e.g., main event, undercard).
+5. bonus: Whether bonuses were awarded for performance.
+
+Performance Metrics
+1. Knockdowns (KD):
+   - red_fighter_KD, blue_fighter_KD: Knockdowns delivered by each fighter.
+
+2. Significant Strikes (Sig Str):
+   - red_fighter_sig_str, blue_fighter_sig_str: Total significant strikes landed.
+   - red_fighter_sig_str_pct, blue_fighter_sig_str_pct: Strike accuracy percentage.
+   - Detailed strikes (head, body, leg, distance, clinch, ground).
+
+3. Takedowns (TD):
+   - red_fighter_TD, blue_fighter_TD: Total takedowns landed.
+   - red_fighter_TD_pct, `blue_fighter_TD_pct: Takedown accuracy percentage.
+
+4. Control Metrics:
+   - red_fighter_ctrl, blue_fighter_ctrl: Time spent controlling the opponent.
+   - red_fighter_sub_att, blue_fighter_sub_att: Submission attempts.
+   - red_fighter_rev, blue_fighter_rev: Reversals.
+
+5. Points:
+   - red_fighter_total_pts, blue_fighter_total_pts: Points scored.
+
+Physical Attributes
+1. Height: red_height_cm, blue_height_cm.
+2. Weight: red_weight_in_kg, blue_weight_in_kg.
+3. Reach: red_reach_in_cm, blue_reach_in_cm.
+4. Stance: red_stance, blue_stance (e.g., orthodox, southpaw).
+
+---
+
+Career Statistics
+1. Wins/Losses/Draws:
+   - red_wins, blue_wins: Career wins.
+   - red_losses, blue_losses: Career losses.
+   - red_draws, blue_draws: Career draws.
+
+2. Striking Metrics:
+   - red_significant_strikes_landed_per_minute, blue_significant_strikes_landed_per_minute: Strikes landed per minute.
+   - red_significant_striking_accuracy, blue_significant_striking_accuracy: Accuracy.
+   - red_significant_strikes_absorbed_per_minute, blue_significant_strikes_absorbed_per_minute: Strikes absorbed.
+
+3. Defense Metrics:
+   - red_significant_strike_defence, blue_significant_strike_defence: Percentage of strikes defended.
+   - red_takedown_defense, blue_takedown_defense: Takedown defense percentage.
+
+4. Takedowns and Submissions:
+   - red_average_takedowns_landed_per_15_minutes, blue_average_takedowns_landed_per_15_minutes: Takedowns per 15 minutes.
+   - red_average_submissions_attempted_per_15_minutes, blue_average_submissions_attempted_per_15_minutes: Submission attempts.
+
+Outcome
+1. who_wins: Target feature (Red, Blue, or Draw).
